@@ -200,31 +200,31 @@ class HomeScreen extends StatelessWidget {
                                       offset: Offset(0, 5)),
                                   BoxShadow(offset: Offset(0, 5)),
                                 ]),
-                          ),
-                          Column(
-                            children: [
-                              Positioned(
-                                child: ClipOval(
-                                  child: Image.asset(
-                                    "assets/applewatch.png",
-                                    width: 100,
+                            child: Column(
+                              children: [
+                                Positioned(
+                                  child: ClipOval(
+                                    child: Image.asset(
+                                      "assets/applewatch.png",
+                                      width: 100,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Text(
-                                'Apple Watch',
-                                style: TextStyle(fontSize: 20),
-                              ),
-                              Text(
-                                'Series 6 . Red',
-                                style: TextStyle(color: Color(0xFF808080)),
-                              ),
-                              Text(
-                                '\$359',
-                                style: TextStyle(color: Colors.purple),
-                              ),
-                            ],
-                          )
+                                Text(
+                                  'Apple Watch',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text(
+                                  'Series 6 . Red',
+                                  style: TextStyle(color: Color(0xFF808080)),
+                                ),
+                                Text(
+                                  '\$359',
+                                  style: TextStyle(color: Colors.purple),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     );

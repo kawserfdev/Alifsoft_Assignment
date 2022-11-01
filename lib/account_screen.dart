@@ -1,3 +1,4 @@
+import 'package:alifsoft/contact_list.dart';
 import 'package:flutter/material.dart';
 
 class Account_Screen extends StatelessWidget {
@@ -55,11 +56,10 @@ class Account_Screen extends StatelessWidget {
                 width: 320,
                 child: ElevatedButton(
                     onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-                        print("validation succesfull");
-                      } else {
-                        print("failded");
-                      }
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => ContactList()),
+                      );
                     },
                     child: Text("login")))
           ]),
